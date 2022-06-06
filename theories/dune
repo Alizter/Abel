@@ -1,0 +1,21 @@
+(include_subdirs qualified)
+
+(coq.theory
+ (name Abel)
+ (package coq-mathcomp-abel)
+ (flags
+  -w -projection-no-head-constant
+  -w -redundant-canonical-projection
+  -w -notation-overridden
+  -w +duplicate-clear
+  -w +non-primitive-record
+  -w +undeclared-scope
+  -w -deprecated-hint-without-locality
+  -w -deprecated-hint-rewrite-without-locality)
+ (theories
+  mathcomp.ssreflect
+  mathcomp.algebra
+  mathcomp.fingroup
+  mathcomp.solvable
+  mathcomp.field
+  mathcomp.real_closed))
